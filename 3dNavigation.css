@@ -161,6 +161,7 @@ html {
     display: none;
    }
    #boxx {
+    margin-left: 35%;
     width: 100px;
     height: 100px;
    }
@@ -176,6 +177,22 @@ html {
     margin-left: 100px;
     justify-content: center;
    }
+    .box a {
+    color: white;
+    font-family: consolas;
+    text-align: center;
+    text-decoration: none;
+    font-size: 32px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 120%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 36deg)) translateZ(200px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004)
+}
 }
 footer {
     width: 100%;
